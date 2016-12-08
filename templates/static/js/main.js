@@ -2,7 +2,7 @@ function initHyperForm() {
 	//add validation for forms
 	if (hyperform && typeof hyperform === 'function') {
 		hyperform(window, {
-			revalidate: 'onsubmit'
+			revalidate: 'oninput'
 		});
 	}
 }
@@ -31,10 +31,49 @@ function initHyperForm() {
 		$('html, body').animate({
 			scrollTop: $("#apply-section").offset().top
 		}, 500);
+		mixpanel.track('Click Top Apply Now Button');
 	});
 
-	$doc.on('submit', '#apply-form', function() {
-		alert('Form Submitted');
+	$doc.on('submit', '#apply-form', function(event) {
+		var form = event.currentTarget
+		var $form = $(form);
+		var email = form.elements['email'].value;
+		var firstName = form.elements['first_name'].value;
+		var lastName = form.elements['last_name'].value;
+
+		mixpanel.alias(email);
+
+		mixpanel.track('Send Apply Form', {
+			$name: firstName,
+			$first_name: firstName,
+			$last_name: lastName,
+			$email: email
+		});
+
+		mixpanel.people.set({
+			'$name': firstName,
+			'First Name': firstName,
+			'Last Name': lastName,
+			'$email': email
+		});
+
+		$.ajax({
+			url: '//formspree.io/' + window.formToken,
+			dataType: 'json',
+			method: 'POST',
+			data: $form.serialize(),
+			success: function(data) {
+				console.log(data);
+				form.reset();
+				$doc.find('.js-alert-success').slideDown();
+				mixpanel.track('Apply Successfully');
+			},
+			error: function(err) {
+				console.log(err);
+				$doc.find('.js-alert-error').slideDown();
+				mixpanel.track('Apply Error');
+			}
+		});
 		return false;
 	});
 

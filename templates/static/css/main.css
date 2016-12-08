@@ -239,6 +239,10 @@ p a:visited {
 	background-color: #F6A141;
 }
 
+.apply-now .alert {
+	display: none;
+}
+
 .apply-now .form-control {
 	border-radius: 0;
 	border: 0;
@@ -258,16 +262,6 @@ p a:visited {
 .apply-now .sub-heading {
 	margin-bottom: 40px;
 }
-
-/* Max width */
-@media screen and (max-width: 600px) {
-	/* The Destination */
-	.the-destination iframe{
-		width: 100%;
-		height: 200px;
-	}
-}
-
 
 /* Min width */
 @media screen and (min-width: 631px) {
