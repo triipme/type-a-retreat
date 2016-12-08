@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="153px" height="153px" viewBox="0 0 153 153" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon Productive</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="38.047619" y="78.5238095" width="32.3809524" height="10.5238095" rx="5.26190476"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="32.3809524" height="10.5238095" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="38.047619" y="87.4285714" width="32.3809524" height="10.5238095" rx="5.26190476"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="32.3809524" height="10.5238095" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CEO-Retreat" transform="translate(-350.000000, -1171.000000)">
+            <g id="What-Next" transform="translate(185.000000, 828.000000)">
+                <g id="Icon-Productive" transform="translate(165.000000, 343.000000)">
+                    <circle id="Oval" fill="#2A4254" cx="76.5" cy="76.5" r="76.5"></circle>
+                    <g id="Group-8" transform="translate(22.666667, 22.666667)" stroke="#FF8330" stroke-linecap="round">
+                        <path d="M52.6190476,0.404761905 L52.6190476,19.0238095" id="Line" stroke-width="3.24"></path>
+                        <path d="M8.79683462,26.089116 L25.0814206,35.1158094" id="Line" stroke-width="3.24"></path>
+                        <path d="M1.97084263,47.8994606 L18.2554286,56.926154" id="Line" stroke-width="3.24" transform="translate(10.113136, 52.412807) rotate(-30.000000) translate(-10.113136, -52.412807) "></path>
+                        <path d="M9.80591629,80.0388581 L25.5957642,70.1722661" id="Line" stroke-width="3.24"></path>
+                        <path d="M71.2380952,53.0238095 C71.2380952,43.8585126 63.9893721,36.4285714 55.047619,36.4285714 M45.5503034,38.5223509 C40.5915581,41.3587563 37.2380952,46.7898708 37.2380952,53.0238095" id="Oval-6" stroke-width="3.24"></path>
+                        <path d="M26.311756,7.63040029 L36.4524161,23.2456475" id="Line" stroke-width="3.24"></path>
+                        <path d="M80.2437862,7.54037478 L70.103126,23.155622" id="Line" stroke-width="3.24"></path>
+                        <path d="M98.4855407,23.9727582 L83.0496507,34.3843975" id="Line" stroke-width="3.24"></path>
+                        <path d="M106.254706,49.8304089 L87.6384942,50.1553561" id="Line" stroke-width="3.24"></path>
+                        <path d="M98.2311968,79.7620649 L82.9793659,69.0826179" id="Line" stroke-width="3.24"></path>
+                        <path d="M45.0383388,97.8040298 C44.7045415,98.4868367 44.5238095,99.2171615 44.5238095,99.9761905 C44.5238095,103.776436 49.0542615,106.857143 54.6428571,106.857143 L54.6428571,106.857143 C60.2314528,106.857143 64.7619048,103.776436 64.7619048,99.9761905 C64.7619048,99.0060304 64.4666444,98.0827644 63.9338953,97.2456769" id="Oval-5" stroke-width="3.24"></path>
+                        <use id="Rectangle" mask="url(#mask-2)" stroke-width="6.48" xlink:href="#path-1"></use>
+                        <use id="Rectangle" mask="url(#mask-4)" stroke-width="6.48" xlink:href="#path-3"></use>
+                        <path d="M69.069398,75.4614868 C69.069398,75.4614868 80.952381,62.3528572 80.952381,53.0238095 C80.952381,38.0463731 68.8107698,25.9047619 53.8333333,25.9047619 C38.8558969,25.9047619 26.7142857,38.0463731 26.7142857,53.0238095 C26.7142857,62.5124435 38.9674994,75.7089628 38.9674994,75.7089628 L38.9674994,75.7089628" id="Oval-4" stroke-width="3.24"></path>
+                        <path d="M50.9747024,79.0645455 C50.9747024,79.0645455 45.7784133,64.9468934 45.7784133,62.2542782 C45.7784133,59.561663 49.9177362,59.9205729 50.9747024,60.8803013 C52.0316685,61.8400297 54.9124349,56.4666574 57.8216611,60.0352028 C60.7308873,63.6037481 62.3933892,61.6575249 62.3933892,61.6575249 C63.1609622,61.2282762 63.5919127,61.5709403 63.3494264,62.4464182 L58.7466053,79.0645455" id="Path-2" stroke-width="3.24"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="162px" height="162px" viewBox="0 0 162 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon invitation only</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M81.4305689,27.9273259 L94.2465005,36.9285119 C95.0697132,37.5066899 95.7370589,38.7931656 95.7370589,39.789794 L95.7370589,100.839067 C95.7370589,101.841132 94.9150368,102.653465 93.9014668,102.653465 L2.48686464,102.653465 C1.4730951,102.653465 0.65127251,101.835696 0.65127251,100.839067 L0.65127251,39.789794 C0.65127251,38.7877296 1.32203404,37.5042909 2.14806809,36.9241312 L14.9697276,27.9273259 M27.7341208,18.9539339 L46.706249,5.62898333 C47.5280027,5.05182996 48.8649156,5.05505151 49.6857291,5.63154451 L68.7043544,18.9891521" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="95.0857864" height="97.4558215" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M14.9792677,64.3455869 L14.9792677,20.6543587 C14.9792677,19.6531217 15.7952194,18.8414588 16.7905565,18.8414588 L79.597775,18.8414588 C80.5981221,18.8414588 81.4090637,19.6503948 81.4090637,20.6642565 L81.4090637,63.6711367" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="66.429796" height="45.504128" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="24.6754517" y="27.6536613" width="46.2403482" height="17.5420479" rx="1.8144"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="46.2403482" height="17.5420479" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CEO-Retreat" transform="translate(-381.000000, -2797.000000)">
+            <g id="Who-you-are" transform="translate(295.000000, 2447.000000)">
+                <g id="Icon-invitation-only" transform="translate(86.000000, 350.000000)">
+                    <circle id="Oval" fill="#2A4254" cx="81" cy="81" r="81"></circle>
+                    <g id="Group-11" transform="translate(34.485149, 24.059406)" stroke="#FF8330" stroke-linecap="round">
+                        <path d="M76.4024063,1.09268648 L70.1339084,9.95230662" id="Line" stroke-width="2.88"></path>
+                        <path d="M19.5381753,0 L26.0509004,9.09587668" id="Line" stroke-width="2.88"></path>
+                        <path d="M0,20.7905753 L9.76908765,26.6379246" id="Line" stroke-width="2.88"></path>
+                        <path d="M97.039604,20.1408698 L88.5730613,27.28763" id="Line" stroke-width="2.88"></path>
+                        <use id="Rectangle-5" mask="url(#mask-2)" stroke-width="5.76" xlink:href="#path-1"></use>
+                        <use id="Rectangle-6" mask="url(#mask-4)" stroke-width="5.76" xlink:href="#path-3"></use>
+                        <path d="M2.49696863,100.182808 C2.49696863,100.182808 48.1672754,67.455798 49.1901547,67.455798 C50.213034,67.455798 93.7234566,100.182808 93.7234566,100.182808" id="Path-6" stroke-width="2.88"></path>
+                        <path d="M2.51159682,55.155173 L34.517443,76.6652463" id="Path-7" stroke-width="2.88"></path>
+                        <path d="M94.4345139,53.9255546 L62.4178556,75.8048941" id="Path-8" stroke-width="2.88"></path>
+                        <use id="Rectangle-7" mask="url(#mask-6)" stroke-width="5.76" xlink:href="#path-5"></use>
+                        <path d="M24.3511497,52.0496444 L69.6848244,52.0496444" id="Line" stroke-width="2.88"></path>
+                        <path d="M24.3537037,60.0016734 L69.0309978,60.0016734" id="Line" stroke-width="2.88"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

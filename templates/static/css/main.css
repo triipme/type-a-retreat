@@ -1,0 +1,359 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
+}
+
+p a {
+	color: #FFAE53;
+	font-weight: bold;
+}
+
+p a:hover,
+p a:active,
+p a:focus,
+p a:visited {
+	color: #FFAE53;
+}
+
+/* components */
+.orange {
+	color: #FFAE53;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.heading {
+	/* “WHAT NEXT?’’: */
+	font-weight: 900;
+	font-size: 25px;
+	color: #FFAE53;
+	letter-spacing: 2.78px;
+	margin-bottom: 15px;
+}
+
+.heading span {
+	border-bottom: 2px solid;
+}
+
+
+.sub-heading {
+	/* ASIA’S HAPPIEST COUN: */
+	font-weight: 700;
+	font-size: 18px;
+	color: #7B8B95;
+	letter-spacing: 0.65px;
+	margin-bottom: 60px;
+}
+
+.super-heading {
+	/* WORLD’S FIRST TYPE-A: */
+	font-weight: 900;
+	color: #FFFFFF;
+	letter-spacing: 7.07px;
+	text-shadow: 5px 0 #602600;
+	margin-bottom: 60px;
+	font-size: 40px;
+	line-height: 1em;
+}
+
+.main > section {
+	padding-top: 30px;
+	padding-bottom: 52px;
+}
+
+.btn.btn-apply {
+	background: #2A4254;
+	padding: 5px 30px;
+	font-weight: 700;
+	font-size: 24px;
+	color: #FFFFFF;
+	letter-spacing: 1.04px;
+	border-radius: 0;
+	transition: all 0.2s linear;
+}
+
+.btn.btn-apply:link,
+.btn.btn-apply:visited,
+.btn.btn-apply:hover,
+.btn.btn-apply:active
+.btn.btn-apply:focus {
+	background-color: #3E5B71;
+	color: #FF6D0C;
+	outline: none;
+}
+
+
+/* Header */
+
+.event-logo {
+	margin-top: 12px;
+	background: url(../img/logo.png) no-repeat;
+	background-size: 100%;
+	margin-left: 15px;
+	width: 85px;
+	height: 45px;
+}
+
+.header {
+	padding-top: 20px;
+}
+
+.header .navbar {
+	margin-bottom: 0;
+	border: none;
+	border-radius: 0;
+}
+
+.header .navbar-default .navbar-toggle {
+	background-color: white;
+}
+
+.header .navbar-default .navbar-nav > li > a {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+
+.header .navbar-collapse {
+	border-top: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.main .banner {
+	background-color: #F6A141;
+	/* height: 765px; */
+	padding-top: 70px;
+	padding-bottom: 80px;
+}
+
+.footer {
+	padding-top: 20px;
+}
+
+.footer ul {
+	padding-left: 0;
+	margin-bottom: 20px;
+}
+
+.footer ul li {
+	display: inline-block;
+	padding-right: 20px;
+}
+.footer ul li a {
+	color: #384652;
+}
+
+/* ==== Pages ==== */
+
+/* Home */
+.the-destination,
+.daily-schedule {
+	background-color: #F6F7FB;
+}
+
+.what-next,
+.who-you-are,
+.who-we-are {
+	background-color: white;
+}
+
+/* What Next */
+.what-next .item,
+.who-you-are .item {
+	margin-bottom: 30px;
+}
+
+.what-next .item .title,
+.who-you-are .item .title {
+	/* TYPE-A PRODUCTIVE: */
+	font-weight: 700;
+	font-size: 20px;
+	color: #FFAE53;
+	letter-spacing: 0.36px;
+	margin-bottom: 30px;
+}
+
+.what-next .item .icon,
+.who-you-are .item .icon {
+	margin-bottom: 30px;
+}
+
+.who-you-are .sub-heading {
+	position: relative;
+	display: inline-block;
+	text-align: left;
+	left: 5%;
+}
+.who-you-are .sub-heading:before {
+	content: '15';
+	position: absolute;
+	display: inline-block;
+	text-align: left;
+	left: -25%;
+	top: -10px;
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: 0.36px;
+	color: #FFAE53;
+	font-size: 2.7em;
+}
+
+/* Daily Schedule */
+.daily-schedule .title {
+	/* DAY 01: */
+	font-weight: 700;
+	font-size: 26px;
+	letter-spacing: 0.59px;
+	margin-bottom: 0;
+}
+
+.daily-schedule .day {
+	transition: all 0.2s linear;
+}
+
+.daily-schedule .day:hover,
+.daily-schedule .day:active,
+.daily-schedule .day:focus {
+	color: #FFAE53;
+}
+
+.daily-schedule .desc {
+	font-size: 20px;
+	color: #FFAE53;
+	letter-spacing: 0.78px;
+}
+
+/* Who We Are */
+.who-we-are .paragraph {
+	max-width: 454px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.apply-now {
+	background-color: #F6A141;
+}
+
+.apply-now .form-control {
+	border-radius: 0;
+	border: 0;
+	height: 40px;
+	font-size: 16px;
+}
+
+.apply-now .btn.btn-apply {
+	font-size: 27px;
+}
+
+.apply-now .heading,
+.apply-now .sub-heading {
+	color: white;
+}
+
+.apply-now .sub-heading {
+	margin-bottom: 40px;
+}
+
+/* Max width */
+@media screen and (max-width: 600px) {
+	/* The Destination */
+	.the-destination iframe{
+		width: 100%;
+		height: 200px;
+	}
+}
+
+
+/* Min width */
+@media screen and (min-width: 631px) {
+	.super-heading {
+		font-size: 70px;
+		text-shadow: 7px 0 #602600;
+	}
+	.btn.btn-apply {
+		font-size: 36px;
+	}
+
+	.what-next .item .title,
+	.who-you-are .item .title {
+		font-size: 26px;
+	}
+
+	.who-you-are .item .desc,
+	.what-next .item .desc {
+		margin: 0 auto;
+		max-width: 50%;
+		padding: 0;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+	.heading {
+		font-size: 48px;
+	}
+	.sub-heading {
+		font-size: 26px;
+	}
+	.event-logo {
+		width: 128px;
+		height: 67px;
+	}
+	.header .navbar-default .navbar-nav > li {
+		padding: 15px;
+	}
+
+	.header .navbar-default .navbar-nav > li > a {
+		color: #2A4254;
+		padding: 0px;
+	}
+
+	.header .navbar-nav > li > a:hover,
+	.header .navbar-nav > li > a:focus,
+	.header .navbar-nav > li > a:active {
+		border-bottom: 2px solid #2A4254;
+	}
+
+	.header .navbar-nav {
+		float: right;
+	}
+	.who-you-are .item .desc,
+	.what-next .item .desc {
+		padding-left: 30px;
+		padding-right: 30px;
+		max-width: 100%;
+	}
+
+	.who-you-are .sub-heading:before {
+		top: -12px;
+	}
+}
+
+@media screen and (min-width: 991px) {
+	.super-heading {
+		font-size: 80px;
+	}
+
+	.who-you-are .item .desc,
+	.what-next .item .desc {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+@media screen and (min-width: 1199px) {
+	.super-heading {
+		font-size: 115px;
+	}
+
+	.who-you-are .item .desc,
+	.what-next .item .desc {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+}

@@ -1,0 +1,94 @@
+.header .navbar-default {
+	background-color: white;
+}
+
+/* Home */
+
+.homepage .header,
+.homepage .main,
+.homepage .header .navbar-default {
+	background-color: #F6A141;
+}
+
+/* About */
+
+.about section .section-content {
+	border-bottom: 1px solid #D8D8D8;
+	padding-bottom: 30px;
+}
+
+.about section.about-gobi .section-content {
+	border-bottom: 0;
+}
+
+.about .main {
+	padding-top: 80px;
+}
+
+.about .main > section {
+	padding-top: 0px;
+}
+
+.about .footer {
+	border-top: 1px solid #D8D8D8;
+}
+
+.about .heading {
+	font-size: 20px;
+}
+
+.about .heading span,
+.science .heading span {
+	border-bottom: none;
+}
+
+.about .header .navbar-default .navbar-nav > li > a,
+.science .header .navbar-default .navbar-nav > li > a {
+	color: #2A4254;
+}
+
+/* The Science Behind */
+
+.science .why-it-works {
+	background-color: #F6F7FB;
+}
+
+.science .heading {
+	margin-bottom: 40px;
+}
+
+.science .number {
+	font-size: 26px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.science .section-content .title {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 15px;
+}
+
+.science .section-content .time-row {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	margin-bottom: 20px;
+	border-bottom:  1px solid #D8D8D8;
+}
+
+.science .section-content .time-row:last-child {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+@media screen and (min-width: 631px) {
+	.homepage .homepage-link a,
+	.science .science-link a,
+	.about .about-link a {
+		border-bottom: 2px solid;
+	}
+
+	.about .heading,
+	.science .heading {
+		font-size: 36px;
+	}
+}

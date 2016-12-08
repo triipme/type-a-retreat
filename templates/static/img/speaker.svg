@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="162px" height="162px" viewBox="0 0 162 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon track record</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="9.78542637" y="16.2768762" width="26.0944703" height="37.2042885" rx="2.58660864"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="26.0944703" height="37.2042885" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M33.5500333,15.1081771 C33.5500333,14.3966684 34.115581,13.6959367 34.8218057,13.5411673 L85.8651196,2.35500623 C86.5675001,2.20107929 87.136892,2.64998423 87.136892,3.37211122 L87.136892,67.1406396 C87.136892,67.8562981 86.5713442,68.2982891 85.8781768,68.1289463 L34.8087484,55.6525409 C34.1135792,55.4827091 33.5500333,54.7580206 33.5500333,54.0567329 L33.5500333,15.1081771 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="53.5868587" height="65.840277" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <path d="M83.2737265,3.8748795 C83.2737265,1.73484264 85.0127366,-1.08713039e-12 87.1493409,-1.08713039e-12 L89.6495111,-1.08713039e-12 C91.7899539,-1.08713039e-12 93.5251256,1.74176956 93.5251256,3.8748795 L93.5251256,65.8831614 C93.5251256,68.0231982 91.7861155,69.7580409 89.6495111,69.7580409 L87.1493409,69.7580409 C85.0088982,69.7580409 83.2737265,68.0162713 83.2737265,65.8831614 L83.2737265,3.8748795 Z" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="10.2513991" height="69.7580409" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CEO-Retreat" transform="translate(-879.000000, -2797.000000)">
+            <g id="Who-you-are" transform="translate(295.000000, 2447.000000)">
+                <g id="Icon-track-record" transform="translate(584.000000, 350.000000)">
+                    <circle id="Oval" fill="#2A4254" cx="81" cy="81" r="81"></circle>
+                    <g id="Group-12" transform="translate(26.465347, 42.504950)" stroke="#FF8330" stroke-linecap="round">
+                        <path d="M103.128227,7.29552844 L96.7740543,16.8872591" id="Line" stroke-width="3.168"></path>
+                        <path d="M114.163308,18.6021442 L103.911909,24.1827875" id="Line" stroke-width="3.168"></path>
+                        <path id="Line" stroke-width="3.168"></path>
+                        <path d="M113.697335,51.1558967 L104.377881,44.1800926" id="Line" stroke-width="3.168"></path>
+                        <path d="M103.445936,62.3171832 L97.388291,52.0860039" id="Line" stroke-width="3.168"></path>
+                        <path d="M10.8193033,46.040307 L2.60754296,46.040307 C1.16743675,46.040307 0,44.8712676 0,43.4406132 L0,25.3873205 C0,23.9515492 1.16987157,22.7876267 2.60754296,22.7876267 L10.8193033,22.7876267" id="Rectangle-11" stroke-width="3.168"></path>
+                        <use id="Rectangle-10" mask="url(#mask-2)" stroke-width="6.336" xlink:href="#path-1"></use>
+                        <use id="Rectangle-8" mask="url(#mask-4)" stroke-width="6.336" xlink:href="#path-3"></use>
+                        <path d="M93.2045753,46.6337214 C96.678795,46.6337214 100.845305,40.8350172 100.845305,34.4139668 C100.845305,27.9929165 96.678795,22.3676081 93.2045753,22.3676081" id="Oval-3" stroke-width="3.168"></path>
+                        <use id="Rectangle-9" mask="url(#mask-6)" stroke-width="6.336" fill="#2A4254" xlink:href="#path-5"></use>
+                        <path d="M13.9791805,51.5866967 L18.3543595,77.2362516 C18.4822733,77.9861481 19.2089328,78.5940594 19.976106,78.5940594 L31.6939225,78.5940594 C32.4616746,78.5940594 33.0194136,77.9832908 32.9376098,77.2104294 L30.3601226,52.8589739" id="Path-9" stroke-width="3.168"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
