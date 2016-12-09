@@ -38,22 +38,17 @@ function initHyperForm() {
 		var form = event.currentTarget
 		var $form = $(form);
 		var email = form.elements['email'].value;
-		var firstName = form.elements['first_name'].value;
-		var lastName = form.elements['last_name'].value;
+		var name = form.elements['name'].value;
 
 		mixpanel.alias(email);
 
 		mixpanel.track('Send Apply Form', {
-			$name: firstName,
-			$first_name: firstName,
-			$last_name: lastName,
+			$name: name,
 			$email: email
 		});
 
 		mixpanel.people.set({
-			'$name': firstName,
-			'First Name': firstName,
-			'Last Name': lastName,
+			'$name': name,
 			'$email': email
 		});
 
