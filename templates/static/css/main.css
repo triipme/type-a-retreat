@@ -19,6 +19,14 @@ p a:visited {
 }
 
 /* components */
+.paragraph {
+	font-size: 16px;
+}
+
+.desc {
+	font-size: 16px;
+}
+
 .orange {
 	color: #FFAE53;
 }
@@ -223,8 +231,7 @@ p a:visited {
 }
 
 .daily-schedule .desc {
-	font-size: 20px;
-	color: #FFAE53;
+	font-size: 18px;
 	letter-spacing: 0.78px;
 }
 
@@ -284,7 +291,6 @@ p a:visited {
 		max-width: 50%;
 		padding: 0;
 	}
-
 }
 
 @media screen and (min-width: 768px) {
