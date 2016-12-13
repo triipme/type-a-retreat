@@ -39,17 +39,20 @@ function initHyperForm() {
 		var $form = $(form);
 		var email = form.elements['email'].value;
 		var name = form.elements['name'].value;
+		var phone = form.elements['phone'].value;
 
 		mixpanel.alias(email);
 
 		mixpanel.track('Send Apply Form', {
 			$name: name,
 			$email: email
+			$phone: phone
 		});
 
 		mixpanel.people.set({
-			'$name': name,
-			'$email': email
+			$name: name,
+			$email: email
+			$phone: phone
 		});
 
 		$.ajax({
