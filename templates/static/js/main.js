@@ -45,13 +45,13 @@ function initHyperForm() {
 
 		mixpanel.track('Send Apply Form', {
 			$name: name,
-			$email: email
+			$email: email,
 			$phone: phone
 		});
 
 		mixpanel.people.set({
 			$name: name,
-			$email: email
+			$email: email,
 			$phone: phone
 		});
 

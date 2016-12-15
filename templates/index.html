@@ -5,6 +5,7 @@
 {% endwith %}
 
 <body>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
 	<div class="app-root homepage">
 		{% include '_nav_header.html' %}
 		<main class="main">
@@ -63,6 +64,7 @@
 					<div class="row section-content">
 						<div class="col-xs-12 text-center col-sm-8 col-sm-offset-2">
 							<div class="embed-responsive embed-responsive-16by9">
+								<a class="show-video video-link fancybox.iframe" rel="nofollow" href="https://www.youtube.com/embed/6EZaCfWxzgY?autoplay=1"></a>
 								<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube-nocookie.com/embed/6EZaCfWxzgY" frameborder="0" allowfullscreen></iframe>
 							</div>
 						</div>
@@ -87,14 +89,14 @@
 									<div class="icon">
 										<img src="static/img/invitation.svg" alt="Invitation" title="Invitation"/>
 									</div>
-									<p class="desc">Retreat participants have been hand-selected, and batches curated so direct-competitors are not together. Truly the finest founders in Asia.</p>
+									<p class="desc">Retreat participants have been hand-selected, and batches curated, so direct-competitors are not together. Truly the finest founders in Asia.</p>
 								</div>
 								<div class="col-xs-12 col-sm-6 text-center item">
 									<h6 class="title">TRACK RECORD SUCCESS</h6>
 									<div class="icon">
 										<img src="static/img/speaker.svg" alt="Track Record" title="Track Record"/>
 									</div>
-									<div class="desc">Only founders and entrepreueners can participate, creating an exclusive environment of shared success and also mutual understanding.</div>
+									<div class="desc">Only founders and entrepreneurs can participate, creating an exclusive environment of shared success and also mutual understanding.</div>
 								</div>
 							</div>
 						</div>
@@ -117,7 +119,7 @@
 									<div class="row">
 										<div class="col-xs-12 col-sm-6 day">
 											<h4 class="title">DAY 01</h4>
-											<p class="desc">TYPE-A BREAKFAST ASIA’S HAPPIEST COUNTRY</p>
+											<p class="desc">TYPE-A BREAKFAST<br/>ASIA’S HAPPIEST COUNTRY</p>
 											<br class="hidden-xs"/>
 										</div>
 										<div class="col-xs-12 col-sm-6 day">
@@ -130,15 +132,15 @@
 										</div>
 										<div class="col-xs-12 col-sm-6 day">
 											<h4 class="title">DAY 04</h4>
-											<p class="desc">TYPE-A BREAKFAST	INTO THE MOUTAIN</p>
+											<p class="desc">TYPE-A BREAKFAST<br/>INTO THE MOUNTAIN</p>
 										</div>
 										<div class="col-xs-12 col-sm-6 day">
 											<h4 class="title">DAY 05</h4>
-											<p class="desc">TYPE-A BREAKFAST UP THE MOUTAIN</p>
+											<p class="desc">TYPE-A BREAKFAST<br/>UP THE MOUNTAIN</p>
 										</div>
 										<div class="col-xs-12 col-sm-6 day">
 											<h4 class="title">DAY 06</h4>
-											<p class="desc">TYPE-A BREAKFAST TIGER’S NEST</p>
+											<p class="desc">TYPE-A BREAKFAST<br/>TIGER’S NEST</p>
 										</div>
 										<div class="col-xs-12 col-sm-6 day">
 											<h4 class="title">DAY 07</h4>
@@ -165,7 +167,7 @@
 							</div>
 							<div class="row">
 								<div class="col-xs-12">
-									<p class="paragraph">We are also Entrepreueners fighting everyday not just for our businesses, but better balance and peace of mind for ourselves, our employees and families.</p>
+									<p class="paragraph">We are also Entrepreneurs fighting everyday not just for our businesses, but better balance and peace of mind for ourselves, our employees and families.</p>
 								</div>
 							</div>
 							<div class="row">
@@ -195,5 +197,23 @@
 	{% with page='Home Page' %}
 	{% include '_global_script.html' %}
 	{% endwith %}
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+	<script>
+		(function(doc, $){
+			$('.video-link').fancybox({
+				maxWidth	: 800,
+				maxHeight	: 600,
+				fitToView	: false,
+				width		: '100%',
+				height		: '70%',
+				autoSize	: false,
+				closeClick	: true,
+				openEffect	: 'fade',
+				closeEffect	: 'fade'
+			}).trigger('click');
+		})(document, jQuery);
+	</script>
 </body>
 </html>
