@@ -66,7 +66,7 @@ function initHyperForm() {
 
 
 		// Production
-		var url = 'https://www.triip.me/api/v1/type_a_retreat_subscriptions';
+		var url = 'https://www.triip.me/api/v1/type_a_retreat_subscriptions/';
 
 		$.ajax({
 			url: url,
