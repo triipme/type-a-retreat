@@ -85,7 +85,7 @@ function initHyperForm() {
 				mixpanel.track('Apply Successfully');
 			},
 			error: function(err) {
-				console.error(err);
+				console.warn(err);
 				$doc.find('.js-alert-success').hide();
 				$doc.find('.js-alert-error').slideDown();
 				mixpanel.track('Apply Error');
