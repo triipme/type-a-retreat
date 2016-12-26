@@ -41,6 +41,12 @@ function initHyperForm() {
 		var name = form.elements['name'].value;
 		var phone = form.elements['phone'].value;
 
+		var data = {
+			email: email,
+			name: name,
+			phone: phone
+		};
+
 		mixpanel.alias(email);
 
 		mixpanel.track('Send Apply Form', {
@@ -55,23 +61,37 @@ function initHyperForm() {
 			$phone: phone
 		});
 
+		// Test
+		//var url = 'https://demo.triip.me/api/v1/type_a_retreat_subscriptions/';
+
+
+		// Production
+		var url = 'https://www.triip.me/api/v1/type_a_retreat_subscriptions';
+
 		$.ajax({
-			url: '//formspree.io/' + window.formToken,
-			dataType: 'json',
+			url: url,
 			method: 'POST',
-			data: $form.serialize(),
+			type: 'POST',
+			crossDomain: true,
+			headers: {
+				'Content-Type': 'application/x-www-form-urlencoded'
+			},
+			data: $.param(data),
 			success: function(data) {
 				console.log(data);
 				form.reset();
+				$doc.find('.js-alert-error').hide();
 				$doc.find('.js-alert-success').slideDown();
 				mixpanel.track('Apply Successfully');
 			},
 			error: function(err) {
-				console.log(err);
+				console.error(err);
+				$doc.find('.js-alert-success').hide();
 				$doc.find('.js-alert-error').slideDown();
 				mixpanel.track('Apply Error');
 			}
 		});
+
 		return false;
 	});
 
