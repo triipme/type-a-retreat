@@ -58,6 +58,11 @@ p a:visited {
 	margin-bottom: 60px;
 }
 
+.small-sub-heading {
+	font-weight: bold;
+	color: #7B8B95;
+}
+
 .super-heading {
 	/* WORLD’S FIRST TYPE-A: */
 	font-weight: 900;
@@ -212,27 +217,92 @@ p a:visited {
 }
 
 /* Daily Schedule */
+
+.main > section.daily-schedule {
+	padding-bottom: 0;
+}
+
+.schedule-top .sub-heading {
+	margin-bottom: 5px;
+}
+
+.schedule-top .small-sub-heading {
+	margin-bottom: 30px;
+}
+
+.schedule-bottom .details {
+	position: relative;
+	opacity: 0;
+	transition: all 0.2s linear;
+}
+
+.schedule-bottom .details p {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 18px;
+	padding: 10px;
+	color: white;
+	background-color:rgba(0, 0, 0, 0.5);
+}
+
+.schedule-bottom {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 52px;
+	padding-top: 30px;
+}
+
+.schedule-bottom .itinerary-background {
+	display: none;
+	position: absolute;
+	top: 0;
+}
+
+.schedule-bottom .day-row {
+	padding-bottom: 10px;
+}
+
+.schedule-bottom .day-row:hover .title,
+.schedule-bottom .day-row:active .title,
+.schedule-bottom .day-row:focus .title ,
+.schedule-bottom .day-row:hover .desc,
+.schedule-bottom .day-row:active .desc,
+.schedule-bottom .day-row:focus .desc {
+	color: #FFAE53;
+}
+
+.schedule-bottom .day-row:hover .details,
+.schedule-bottom .day-row:active .details,
+.schedule-bottom .day-row:focus .details {
+	opacity: 1;
+}
+
+.schedule-bottom .day-row:hover .details p,
+.schedule-bottom .day-row:active .details p,
+.schedule-bottom .day-row:focus .details p {
+	color: #FFAE53;
+}
+
 .daily-schedule .title {
+	transition: all 0.2s linear;
 	/* DAY 01: */
 	font-weight: 700;
 	font-size: 26px;
 	letter-spacing: 0.59px;
 	margin-bottom: 0;
+	color: #7B8B95;
 }
 
 .daily-schedule .day {
 	transition: all 0.2s linear;
 }
 
-.daily-schedule .day:hover,
-.daily-schedule .day:active,
-.daily-schedule .day:focus {
-	color: #FFAE53;
-}
 
 .daily-schedule .desc {
 	font-size: 18px;
 	letter-spacing: 0.78px;
+	color: #7B8B95;
 }
 
 /* Who We Are */
@@ -270,6 +340,16 @@ p a:visited {
 	margin-bottom: 40px;
 }
 
+@media screen and (min-width: 768px) {
+	.schedule-bottom .itinerary-background {
+		display: block;
+	}
+	.daily-schedule .title,
+	.daily-schedule .desc {
+		color: white;
+	}
+}
+
 /* Min width */
 @media screen and (min-width: 631px) {
 	.super-heading {
@@ -299,6 +379,9 @@ p a:visited {
 	}
 	.sub-heading {
 		font-size: 26px;
+	}
+	.small-sub-heading {
+		font-size: 18px;
 	}
 	.event-logo {
 		width: 128px;
