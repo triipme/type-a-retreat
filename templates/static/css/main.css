@@ -240,7 +240,7 @@ p a:visited {
 	position: absolute;
 	top: 0;
 	left: 0;
-	font-size: 18px;
+	font-size: 25px;
 	padding: 10px;
 	color: white;
 	background-color:rgba(0, 0, 0, 0.5);
@@ -248,15 +248,16 @@ p a:visited {
 
 .schedule-bottom {
 	position: relative;
-	overflow: hidden;
 	padding-bottom: 52px;
 	padding-top: 30px;
 }
 
-.schedule-bottom .itinerary-background {
-	display: none;
+.schedule-bottom .itinerary-banner {
+	height: 100%;
 	position: absolute;
 	top: 0;
+	overflow: hidden;
+	display: none;
 }
 
 .schedule-bottom .day-row {
@@ -276,12 +277,6 @@ p a:visited {
 .schedule-bottom .day-row:active .details,
 .schedule-bottom .day-row:focus .details {
 	opacity: 1;
-}
-
-.schedule-bottom .day-row:hover .details p,
-.schedule-bottom .day-row:active .details p,
-.schedule-bottom .day-row:focus .details p {
-	color: #FFAE53;
 }
 
 .daily-schedule .title {
@@ -341,7 +336,7 @@ p a:visited {
 }
 
 @media screen and (min-width: 768px) {
-	.schedule-bottom .itinerary-background {
+	.schedule-bottom .itinerary-banner {
 		display: block;
 	}
 	.daily-schedule .title,
