@@ -53,14 +53,14 @@ p a:visited {
 	/* ASIA’S HAPPIEST COUN: */
 	font-weight: 700;
 	font-size: 18px;
-	color: #7B8B95;
+	color: #3E5B71;
 	letter-spacing: 0.65px;
 	margin-bottom: 60px;
 }
 
 .small-sub-heading {
 	font-weight: bold;
-	color: #7B8B95;
+	color: #3E5B71;
 }
 
 .super-heading {
@@ -170,6 +170,10 @@ p a:visited {
 	background-color: #F6F7FB;
 }
 
+.the-destination .twitter-section {
+	padding-top: 40px;
+}
+
 .what-next,
 .who-you-are,
 .who-we-are {
@@ -215,6 +219,20 @@ p a:visited {
 	color: #FFAE53;
 	font-size: 2.7em;
 }
+
+/* Price Section */
+.main > section.price-section {
+	background-color: #F6F7FB;
+	padding-top: 0;
+	padding-bottom: 20px;
+}
+
+.price-section .price-title {
+	color: #3E5B71;
+	font-size: 20px;
+}
+
+
 
 /* Daily Schedule */
 
@@ -286,7 +304,7 @@ p a:visited {
 	font-size: 26px;
 	letter-spacing: 0.59px;
 	margin-bottom: 0;
-	color: #7B8B95;
+	color: #3E5B71;
 }
 
 .daily-schedule .day {
@@ -297,7 +315,7 @@ p a:visited {
 .daily-schedule .desc {
 	font-size: 18px;
 	letter-spacing: 0.78px;
-	color: #7B8B95;
+	color: #3E5B71;
 }
 
 /* Who We Are */
@@ -410,6 +428,15 @@ p a:visited {
 	.who-you-are .sub-heading:before {
 		top: -12px;
 	}
+
+	.price-section .price-title {
+		font-size: 26px;
+	}
+
+	.price-section .the-money {
+		font-size: 40px;
+	}
+
 }
 
 @media screen and (min-width: 991px) {
