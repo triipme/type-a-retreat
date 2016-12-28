@@ -170,8 +170,9 @@ p a:visited {
 	background-color: #F6F7FB;
 }
 
-.the-destination .twitter-section {
+.twitter-section {
 	padding-top: 40px;
+	background-color: #F6F7FB;
 }
 
 .what-next,
