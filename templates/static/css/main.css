@@ -223,7 +223,7 @@ p a:visited {
 
 /* Price Section */
 .main > section.price-section {
-	background-color: #F6F7FB;
+	background-color: #FFAE53;
 	padding-top: 0;
 	padding-bottom: 20px;
 }
@@ -234,6 +234,14 @@ p a:visited {
 }
 
 
+.price-section .the-money,
+.price-section .price-desc {
+	color: white;
+}
+
+.price-section .angel-opportunity {
+	border-bottom: 1px solid #F6F7FB;
+}
 
 /* Daily Schedule */
 
@@ -430,12 +438,25 @@ p a:visited {
 		top: -12px;
 	}
 
+	.main > section.price-section {
+		background-color: #F6F7FB;
+	}
+
+	.price-section .price-desc,
+	.price-section .the-money {
+		color: #F6A141;
+	}
+
 	.price-section .price-title {
 		font-size: 26px;
 	}
 
 	.price-section .the-money {
 		font-size: 40px;
+	}
+
+	.price-section .angel-opportunity {
+		border-bottom: none;
 	}
 
 }
