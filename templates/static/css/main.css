@@ -374,6 +374,47 @@ p a:visited {
 	margin-bottom: 40px;
 }
 
+.main > section.twitter-section-slider {
+	background-color: #F6F7FB;
+	padding: 10px 0;
+}
+
+.twitter-section-slider .news-heading {
+	margin: 0;
+    font-size: 18px;
+    padding-top: 3px;
+    color: #FFAE53;
+}
+
+.twitter-section-slider.clone {
+	top: -100px;
+	position: fixed;
+	z-index: 3;
+	width: 100%;
+}
+
+.twitter-section-slider.clone.sticked {
+    top: 0;
+}
+
+.twitter-section-slider span {
+	white-space: nowrap;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.twitter-section-slider .twitter-section-items {
+	overflow: hidden;
+	padding-left: 0;
+}
+
+.twitter-section-slider a {
+	font-weight: bold;
+	color: #3E5B71;
+	font-size: 18px;
+	cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
 	.schedule-bottom .itinerary-banner {
 		display: block;

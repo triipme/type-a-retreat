@@ -7,6 +7,17 @@ function initHyperForm() {
 	}
 }
 
+function initNewsSticker() {
+	var slider = document.getElementById('twitter-section-slider');
+	var clonedSlider = document.getElementById('twitter-section-slider-clone');
+
+	var firstOffsetTop = slider.offsetTop;
+
+	window.addEventListener('scroll', function(event) {
+		clonedSlider.classList.toggle('sticked', window.scrollY >= firstOffsetTop);
+	});
+}
+
 (function(doc, $){
 
 	var $doc = $(doc);
@@ -93,6 +104,37 @@ function initHyperForm() {
 		});
 
 		return false;
+	});
+
+	window.twitterFetcher.fetch({
+		"profile": {
+			"screenName": 'typeAretreat'
+		},
+		"id": '811424291149361152',
+		"maxTweets": 8,
+		"enableLinks": true,
+		"dataOnly": true,
+		"customCallback": function(tweets) {
+			var elements = document.getElementsByClassName('twitter-section-items');
+			if (!elements && !elements.length) {
+				return;
+			}
+			var html = '<marquee scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">';
+			for (var i = 0, lgth = tweets.length; i < lgth ; i++) {
+				var tweetObject = tweets[i];
+				var div = document.createElement("div");
+				div.innerHTML = tweetObject.tweet;
+				var text = div.textContent || div.innerText || "";
+				html += '<span><a href="' + tweetObject.permalinkURL + '">' + text + '</a></span>';
+			}
+			html += '</marquee>';
+
+			for (var j = elements.length - 1; j >= 0; j--) {
+				elements[j].innerHTML = html;
+			}
+
+			initNewsSticker();
+		}
 	});
 
 })(document, jQuery);
