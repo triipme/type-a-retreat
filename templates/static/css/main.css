@@ -243,6 +243,22 @@ p a:visited {
 	border-bottom: 1px solid #F6F7FB;
 }
 
+.price-section .angel-opportunity.sold-out h3,
+.price-section .angel-opportunity.sold-out h2,
+.price-section .angel-opportunity.sold-out p {
+	opacity: 0.5;
+	position: relative;
+}
+
+.price-section .angel-opportunity.sold-out:after {
+	content: "SOLD OUT";
+    font-size: 25px;
+    font-weight: bold;
+    top: 30px;
+    color: white;
+    z-index: 2;
+}
+
 /* Daily Schedule */
 
 .main > section.daily-schedule {
@@ -510,6 +526,10 @@ p a:visited {
 
 	.price-section .angel-opportunity {
 		border-bottom: none;
+	}
+
+	.price-section .angel-opportunity.sold-out:after {
+	    color: #F6A141;
 	}
 
 }
