@@ -97,9 +97,19 @@ function initNewsSticker() {
 			},
 			error: function(err) {
 				console.warn(err);
+				var errorMessage = 'There is some errors on submission, but don\'t worry, we will contact you soon.';
+				if (err &&
+					err.responseJSON &&
+					err.responseJSON.errors[0] &&
+					err.responseJSON.errors[0].title) {
+					errorMessage = err.responseJSON.errors[0].title;
+				}
 				$doc.find('.js-alert-success').hide();
 				$doc.find('.js-alert-error').slideDown();
-				mixpanel.track('Apply Error');
+				$('#error-messages').html(errorMessage);
+				mixpanel.track('Apply Error', {
+					message: errorMessage
+				});
 			}
 		});
 
