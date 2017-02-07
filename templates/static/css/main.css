@@ -356,6 +356,83 @@ p a:visited {
 	color: #3E5B71;
 }
 
+/* Testimonials */
+
+.profile-card {
+	background-color: #fff;
+	padding: 0 20px 20px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+	text-align: center;
+	margin-bottom: 120px;
+}
+
+.profile-card .profile-content {
+	padding-top: 80px;
+}
+
+.profile-card .avatar {
+	overflow: hidden;
+	height: 150px;
+	width: 150px;
+	z-index: 1;
+	position: absolute;
+	left: 50%;
+	top: -75px;
+	margin-left: -75px;
+	border-radius: 100px;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	box-shadow: 0 0 0 13px #fff;
+	-webkit-box-shadow: 0 0 0 13px #fff;
+	-moz-box-shadow: 0 0 0 13px #fff;
+}
+
+.profile-card .name {
+	font-size: 32px;
+	font-weight: 600;
+	margin-bottom: 15px;
+	color: #333;
+}
+.profile-card .role {
+	font-size: 13px;
+	color: #00baff;
+	letter-spacing: 1px;
+	margin-bottom: 25px
+}
+.profile-card .desc {
+	font-size: 16px;
+	line-height: 26px;
+	margin-bottom: 20px;
+	color: #666;
+}
+
+.testimonials .heading {
+	color: white;
+}
+
+.testimonials .sub-heading {
+	text-transform: uppercase;
+}
+
+.testimonials .section-content {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.testimonials .section-more-content {
+	display: none;
+}
+
+.testimonials .section-content .profile-item:last-child .profile-card {
+	margin-bottom: 0;
+}
+
 /* Who We Are */
 .who-we-are .paragraph {
 	max-width: 454px;
@@ -548,6 +625,10 @@ p a:visited {
 	.what-next .item .desc {
 		padding-left: 50px;
 		padding-right: 50px;
+	}
+
+	.profile-card {
+		margin-bottom: 0;
 	}
 }
 
