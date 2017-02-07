@@ -275,7 +275,7 @@
 				window.imgix.config.host = 'typearetreat.imgix.net';
 			}
 
-			$('.video-link').fancybox({
+			var $videoLink = $('.video-link').fancybox({
 				maxWidth	: 800,
 				maxHeight	: 600,
 				fitToView	: false,
@@ -285,7 +285,20 @@
 				closeClick	: true,
 				openEffect	: 'fade',
 				closeEffect	: 'fade'
-			}).trigger('click');
+			});
+
+			window.visitedTypeA = readCookie('visitedTypeA');
+
+			if (!window.visitedTypeA) {
+				$videoLink.trigger('click');
+				createCookie('visitedTypeA', true);
+			}
+
+			$(document).on('click', '.btn-js-see-more-profile', function() {
+				$('#testimonials').find('.section-more-content').slideDown();
+				$('#see-more-button-wrapper').fadeOut();
+			});
+
 		})(document, jQuery);
 	</script>
 </body>

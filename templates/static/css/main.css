@@ -309,6 +309,7 @@ p a:visited {
 
 .schedule-bottom .itinerary-banner {
 	height: 100%;
+	width: 100%;
 	position: absolute;
 	top: 0;
 	overflow: hidden;
@@ -360,6 +361,10 @@ p a:visited {
 	max-width: 454px;
 	margin: 0 auto;
 	margin-bottom: 30px;
+}
+
+.who-we-are img {
+	max-width: 100%;
 }
 
 .apply-now {
