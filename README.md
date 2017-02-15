@@ -2,6 +2,20 @@
 
 ## Installation
 
+Install automatically using installing script:
+
+```bash
+sh ./install.sh
+```
+
+What it does:
+
+- Install `virtualenvwrapper`
+- Create a virtualenv named `type-a-retreat`
+- Install dependencies in `requirements.txt`
+
+Or you can install it manually:
+
 Because `staticjinja` engine has import issue in `python3`, we should use `python 2` for this.
 
 If you're using `virtualenv`:
@@ -14,20 +28,26 @@ workon ceo-retreat
 Then install requirements:
 
 ```
-pip install -r requirements
+pip install -r requirements.txt
 ```
 
 ## Developement
 
+
 Run script to auto build when has change:
 
-```
-python watch.py
+```bash
+sh ./work.sh
 ```
 
 This will generate HTML and copy static files to `output` directory.
 
-To run server for previewing:
+In another terminal window, run server for previewing:
+
+```
+sh ./preview.sh
+```
+
 
 ```
 # python 2
@@ -39,6 +59,10 @@ python -m http.server
 
 ## Deploy
 
->TODO
+Just commit code and our continuous delivery script will deploy to production site.
 
-Currently deploy using `s3_website` with `s3_website push`
+Manually deploy:
+
+```bash
+sh ./deploy.sh
+```
