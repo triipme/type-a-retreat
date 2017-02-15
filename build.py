@@ -9,5 +9,5 @@ if __name__ == "__main__":
         staticpaths=['static', ],
         contexts=[('index.html', context)]
     )
-    # enable automatic reloading
-    site.render(use_reloader=True)
+    # disable automatic reloading
+    site.render(use_reloader=False)
