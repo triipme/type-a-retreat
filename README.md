@@ -31,8 +31,9 @@ Then install requirements:
 pip install -r requirements.txt
 ```
 
-## Developement
+## Working
 
+### Start working
 
 Run script to auto build when has change:
 
@@ -57,11 +58,19 @@ python -m SimpleHTTPServer
 python -m http.server
 ```
 
+### Finish working
+
+To save your works to the remote repo so that it can be deployed to the production site, run the `work-finish.sh` script:
+
+```
+sh ./work-finish.sh
+```
+
 ## Deploy
 
-Just commit code and our continuous delivery script will deploy to production site.
+**Just commit code and our continuous delivery script will deploy to production site.**
 
-Manually deploy:
+Manually deploy (should be done automatically by our bot):
 
 ```bash
 sh ./deploy.sh
