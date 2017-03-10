@@ -75,16 +75,20 @@ function eraseCookie(name) {
 	});
 
 	$doc.on('submit', '#apply-form', function(event) {
-		var form = event.currentTarget
+		var form = event.currentTarget;
 		var $form = $(form);
-		var email = form.elements['email'].value;
-		var name = form.elements['name'].value;
-		var phone = form.elements['phone'].value;
+		var email = form.elements.email.value;
+		var name = form.elements.name.value;
+		var phone = form.elements.phone.value;
+		var title = form.elements.title.value;
+		var country = form.elements.country.value;
 
 		var data = {
 			email: email,
 			name: name,
-			phone: phone
+			phone: phone,
+			title: title,
+			country: country
 		};
 
 		mixpanel.alias(email);
@@ -92,13 +96,17 @@ function eraseCookie(name) {
 		mixpanel.track('Send Apply Form', {
 			$name: name,
 			$email: email,
-			$phone: phone
+			$phone: phone,
+			$title: title,
+			'Registered Country': country,
 		});
 
 		mixpanel.people.set({
 			$name: name,
 			$email: email,
-			$phone: phone
+			$phone: phone,
+			$title: title,
+			'Registered Country': country,
 		});
 
 		// Test

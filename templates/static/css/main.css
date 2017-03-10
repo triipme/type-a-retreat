@@ -429,6 +429,10 @@ p a:visited {
 	display: none;
 }
 
+.testimonials .btn-see-more-profile {
+	margin-bottom: 20px;
+}
+
 .testimonials .section-content .profile-item:last-child .profile-card {
 	margin-bottom: 0;
 }
