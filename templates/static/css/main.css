@@ -430,7 +430,11 @@ p a:visited {
 	padding-bottom: 60px;
 }
 
-.testimonials .section-more-content {
+/* .testimonials .section-more-content {
+	display: none;
+} */
+
+.testimonials .see-more-button {
 	display: none;
 }
 
