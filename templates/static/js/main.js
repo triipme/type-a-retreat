@@ -172,7 +172,7 @@ function eraseCookie(name) {
 				var div = document.createElement("div");
 				div.innerHTML = tweetObject.tweet;
 				var text = div.textContent || div.innerText || "";
-				html += '<span><a href="' + tweetObject.permalinkURL + '">' + text + '</a></span>';
+				html += '<span><a target="_blank" href="' + tweetObject.permalinkURL + '">' + text + '</a></span>';
 			}
 			html += '</marquee>';
 

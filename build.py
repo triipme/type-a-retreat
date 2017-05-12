@@ -2,7 +2,7 @@ from staticjinja import make_site
 
 
 if __name__ == "__main__":
-    context = {'version': '12'}
+    context = {'version': '13'}
     site = make_site(
         outpath='output',
         extensions=['jinja2.ext.with_', ],
