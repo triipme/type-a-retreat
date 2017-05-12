@@ -438,6 +438,11 @@ p a:visited {
 	margin-bottom: 20px;
 }
 
+.testimonials .see-full-list-button {
+	display: none;
+	color: white;
+}
+
 .testimonials .section-content .profile-item:last-child .profile-card {
 	margin-bottom: 0;
 }
