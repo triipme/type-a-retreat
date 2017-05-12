@@ -375,10 +375,6 @@ p a:visited {
 	padding-top: 80px;
 }
 
-.profile-card .profile-content .desc {
-	display: none;
-}
-
 .profile-card .avatar {
 	overflow: hidden;
 	height: 150px;
@@ -430,14 +426,14 @@ p a:visited {
 	padding-bottom: 60px;
 }
 
-/* .testimonials .section-more-content {
-	display: none;
-} */
-
-.testimonials .see-more-button {
+.testimonials .section-more-content {
 	display: none;
 }
 
+/* .testimonials .see-more-button {
+	display: none;
+}
+ */
 .testimonials .btn-see-more-profile {
 	margin-bottom: 20px;
 }

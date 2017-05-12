@@ -38,12 +38,14 @@
 }
 
 .about .heading span,
+.timeline .heading span,
 .science .heading span {
 	border-bottom: none;
 }
 
 .about .header .navbar-default .navbar-nav > li > a,
-.science .header .navbar-default .navbar-nav > li > a {
+.science .header .navbar-default .navbar-nav > li > a ,
+.timeline .header .navbar-default .navbar-nav > li > a {
 	color: #2A4254;
 }
 
@@ -80,15 +82,292 @@
 	padding-bottom: 0;
 }
 
+/*==================================
+    TIMELINE
+==================================*/
+/*-- GENERAL STYLES
+------------------------------*/
+.timeline-container {
+	line-height: 1.4em;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.timeline-list-items {
+	padding-top: 50px;
+}
+
+.timeline .profile-card .name {
+	font-size: 20px;
+}
+
+.timeline .profile-card .profile-content {
+	padding-top: 0;
+}
+
+.timeline .profile-card .profile-content .desc {
+	display: none;
+}
+
+.timeline .profile-card,
+.timeline .profile-card .avatar {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+
+.timeline .profile-card .avatar {
+	margin: 0 auto;
+	position: static;
+}
+
+.timeline .profile-card {
+	margin-bottom: 0;
+}
+
+.timeline .section-content {
+	padding-bottom: 20px;
+}
+
+.timeline-container h1,
+.timeline-container h2,
+.timeline-container h3,
+.timeline-container h4,
+.timeline-container h5,
+.timeline-container h6 {
+	line-height: inherit;
+}
+
+/*----- TIMELINE ITEM -----*/
+.timeline-item {
+	list-style: none;
+	padding-left: 40px;
+	position: relative;
+}
+.timeline-item:first-child .timeline-marker:before {
+	border-top: 0;
+}
+
+.timeline-item:last-child {
+  	padding-bottom: 0;
+}
+
+/*----- TIMELINE INFO -----*/
+.timeline-info {
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	margin: 0 0 .5em 0;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+/*----- TIMELINE MARKER -----*/
+.timeline-marker {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 15px;
+}
+.timeline-marker:before {
+	background: #FFAE53;
+	border: 3px solid transparent;
+	border-radius: 100%;
+	content: "";
+	display: block;
+	height: 15px;
+	position: absolute;
+	top: 4px;
+	left: 0;
+	width: 15px;
+	transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+.timeline-marker:after {
+	content: "";
+	width: 3px;
+	background: #CCD5DB;
+	display: block;
+	position: absolute;
+	top: 24px;
+	bottom: 0;
+	left: 6px;
+}
+.timeline-item:last-child .timeline-marker:after {
+	content: none;
+}
+
+.timeline-item:not(.period):hover .timeline-marker:before {
+	background: transparent;
+	border: 3px solid #FFAE53;
+}
+
+/*----- TIMELINE CONTENT -----*/
+.timeline-content {
+	padding-top: 60px;
+}
+.timeline-content p:last-child {
+	margin-bottom: 0;
+}
+
+/*----- TIMELINE PERIOD -----*/
+.period {
+	padding: 0;
+}
+.period .timeline-info {
+	display: none;
+}
+.period .timeline-marker:before {
+	background: transparent;
+	content: "";
+	width: 15px;
+	height: auto;
+	border: none;
+	border-radius: 0;
+	top: 0;
+	bottom: 30px;
+	position: absolute;
+	border-top: 3px solid #CCD5DB;
+	border-bottom: 3px solid #CCD5DB;
+}
+.period .timeline-marker:after {
+	content: "";
+	height: 32px;
+	top: auto;
+}
+.period .timeline-content {
+	padding: 40px 0 50px;
+}
+.period .timeline-title {
+	margin: 0;
+}
+
+/*----------------------------------------------
+    MOD: TIMELINE SPLIT
+----------------------------------------------*/
+@media (min-width: 768px) {
+	.timeline-split .timeline, .timeline-centered .timeline {
+		display: table;
+	}
+	.timeline-split .timeline-item, .timeline-centered .timeline-item {
+		display: table-row;
+		padding: 0;
+	}
+	.timeline-split .timeline-info, .timeline-centered .timeline-info,
+	.timeline-split .timeline-marker,
+	.timeline-centered .timeline-marker,
+	.timeline-split .timeline-content,
+	.timeline-centered .timeline-content,
+	.timeline-split .period .timeline-info,
+	.timeline-centered .period .timeline-info {
+		display: table-cell;
+		vertical-align: top;
+	}
+	.timeline-split .timeline-marker, .timeline-centered .timeline-marker {
+		position: relative;
+	}
+	.timeline-split .timeline-content, .timeline-centered .timeline-content {
+		padding-left: 30px;
+	}
+	.timeline-split .timeline-info, .timeline-centered .timeline-info {
+		padding-right: 30px;
+	}
+	.timeline-split .period .timeline-title, .timeline-centered .period .timeline-title {
+		position: relative;
+		left: -45px;
+	}
+}
+
+/*----------------------------------------------
+    MOD: TIMELINE CENTERED
+----------------------------------------------*/
+@media (min-width: 992px) {
+	.timeline-centered,
+	.timeline-centered .timeline-item,
+	.timeline-centered .timeline-info,
+	.timeline-centered .timeline-marker,
+	.timeline-centered .timeline-content {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+	.timeline-centered .timeline-item {
+		padding-bottom: 40px;
+		overflow: hidden;
+	}
+	.timeline-centered .timeline-marker {
+		position: absolute;
+		left: 50%;
+		margin-left: -7.5px;
+	}
+	.timeline-centered .timeline-info,
+	.timeline-centered .timeline-content {
+		width: 50%;
+	}
+	.timeline-centered > .timeline-item:nth-child(odd) .timeline-info {
+		float: left;
+		text-align: right;
+		padding-right: 30px;
+	}
+	.timeline-centered > .timeline-item:nth-child(odd) .timeline-content {
+		float: right;
+		text-align: left;
+		padding-left: 30px;
+	}
+	.timeline-centered > .timeline-item:nth-child(even) .timeline-info {
+		float: right;
+		text-align: left;
+		padding-left: 30px;
+	}
+	.timeline-centered > .timeline-item:nth-child(even) .timeline-content {
+		float: left;
+		text-align: right;
+		padding-right: 30px;
+	}
+	.timeline-centered > .timeline-item.period .timeline-content {
+		float: none;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+	}
+	.timeline-centered .timeline-item.period {
+		padding: 50px 0 90px;
+	}
+		.timeline-centered .period .timeline-marker:after {
+		height: 30px;
+		bottom: 0;
+		top: auto;
+	}
+	.timeline-centered .period .timeline-title {
+		left: auto;
+	}
+}
+
+/*----------------------------------------------
+    MOD: MARKER OUTLINE
+----------------------------------------------*/
+.marker-outline .timeline-marker:before {
+	background: transparent;
+	border-color: #FFAE53;
+}
+.marker-outline .timeline-item:hover .timeline-marker:before {
+	background: #FFAE53;
+}
+
+
 @media screen and (min-width: 631px) {
 	.homepage .homepage-link a,
 	.science .science-link a,
-	.about .about-link a {
+	.about .about-link a,
+	.timeline .timeline-link a {
 		border-bottom: 2px solid;
 	}
 
 	.about .heading,
-	.science .heading {
+	.science .heading,
+	.timeline .heading {
 		font-size: 36px;
 	}
 }
