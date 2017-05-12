@@ -434,13 +434,14 @@ p a:visited {
 	display: none;
 }
  */
-.testimonials .btn-see-more-profile {
+.testimonials .btn-see-more-profile,
+.testimonials .see-full-list-button {
 	margin-bottom: 20px;
 }
 
 .testimonials .see-full-list-button {
 	display: none;
-	color: white;
+	color: white !important;
 }
 
 .testimonials .section-content .profile-item:last-child .profile-card {
