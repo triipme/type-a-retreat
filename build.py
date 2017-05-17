@@ -12,6 +12,11 @@ if __name__ == "__main__":
         outpath='output',
         extensions=['jinja2.ext.with_', ],
         staticpaths=['static', ],
-        contexts=[('index.html', context)]
+        contexts=[
+        	('index.html', context),
+        	('about/index.html', context),
+        	('the-science-behind/index.html', context),
+        	('timeline/index.html', context)
+        ]
     )
     site.render(use_reloader=should_watch)
