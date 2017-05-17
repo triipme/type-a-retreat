@@ -1,5 +1,10 @@
 from staticjinja import make_site
+import argparse
 
+parser = argparse.ArgumentParser(description='Watch and/or build project')
+parser.add_argument('--watch', action='store_true')
+args = parser.parse_args()
+should_watch = args.watch
 
 if __name__ == "__main__":
     context = {'version': '13'}
@@ -9,5 +14,4 @@ if __name__ == "__main__":
         staticpaths=['static', ],
         contexts=[('index.html', context)]
     )
-    # disable automatic reloading
-    site.render(use_reloader=False)
+    site.render(use_reloader=should_watch)
