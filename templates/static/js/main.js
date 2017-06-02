@@ -117,6 +117,25 @@ function eraseCookie(name) {
 		var url = 'https://www.triip.me/api/v1/type_a_retreat_subscriptions/';
 
 		$.ajax({
+			type		: 'GET',
+			url			: $form.attr('action'),
+			data		: $form.serialize(),
+			cache       : false,
+			dataType    : 'json',
+			contentType	: 'application/json; charset=utf-8',
+			error       : function(err) {
+				console.log('Could not connect to the mailchimp registration server', err);
+			},
+			success     : function(data) {
+				if (data.result !== 'success') {
+					console.log('Mailchimp server error:', data);
+				} else {
+					console.log('Mailchimp server success:', data);
+				}
+			}
+		});
+
+		$.ajax({
 			url: url,
 			method: 'POST',
 			type: 'POST',
