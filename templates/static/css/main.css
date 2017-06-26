@@ -527,6 +527,91 @@ p a:visited {
 	font-size: 18px;
 	cursor: pointer;
 }
+.testimonials-section {
+	background-color: white;
+}
+
+.testimonials-section .snip {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.4em;
+  background-color: #F6F7FB;
+  padding-top: 120px;
+  margin-bottom: 10px;
+}
+.testimonials-section .snip * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.testimonials-section .snip img {
+  max-width: 100%;
+  vertical-align: top;
+  opacity: 0.85;
+}
+.testimonials-section .snip figcaption {
+  width: 100%;
+  background-color: #F6A141;
+  padding: 25px;
+  position: relative;
+}
+.testimonials-section .snip figcaption:before {
+  position: absolute;
+  content: '';
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px 0 0 400px;
+  border-color: transparent transparent transparent #F6A141;
+}
+.testimonials-section .snip .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 25px;
+  z-index: 1;
+  max-width: 96px;
+  opacity: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.testimonials-section .snip h3 {
+  font-size: 1.3em;
+  margin: 25px 12px;
+  font-weight: 300;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  color: #3E5B71;
+}
+.testimonials-section .snip h3 span {
+  display: block;
+  font-size: 0.65em;
+}
+.testimonials-section .snip blockquote {
+	line-height: 1.3em;
+	margin: 0 0 10px;
+	padding: 0 0 30px;
+	font-style: italic;
+	font-weight: 300;
+	border-left: none;
+}
+.testimonials-section .snip blockquote:after {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 180px;
+  line-height: 1em;
+  color: #212121;
+  font-style: normal;
+  content: "\201D";
+  right: 20px;
+  bottom: -105px;
+}
 
 @media screen and (min-width: 768px) {
 	.schedule-bottom .itinerary-banner {
