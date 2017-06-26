@@ -2,6 +2,12 @@
 
 ## Installation
 
+Install `brew` 
+
+Install python3: `brew install python3`
+
+Then
+
 Install automatically using installing script:
 
 ```bash
