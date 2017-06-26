@@ -14,7 +14,7 @@ Install pip: `python get-pip.py`
 
 Then
 
-Install automatically using installing script:
+Install automatically the packages using the installing script:
 
 ```bash
 sh ./install.sh
