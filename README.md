@@ -6,9 +6,15 @@ Install `brew`
 
 Install python3: `brew install python3`
 
+Download : `https://bootstrap.pypa.io/get-pip.py` 
+and
+Install pip: `python get-pip.py`
+
+*Note: You may need to run it with `sudo`
+
 Then
 
-Install automatically using installing script:
+Install automatically the packages using the installing script:
 
 ```bash
 sh ./install.sh
