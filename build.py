@@ -7,7 +7,7 @@ args = parser.parse_args()
 should_watch = args.watch
 
 if __name__ == "__main__":
-    context = {'version': '17'}
+    context = {'version': '19'}
     site = make_site(
         outpath='output',
         extensions=['jinja2.ext.with_', ],
