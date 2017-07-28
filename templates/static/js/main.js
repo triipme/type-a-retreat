@@ -82,13 +82,15 @@ function eraseCookie(name) {
 		var phone = form.elements.phone.value;
 		var title = form.elements.title.value;
 		var country = form.elements.country.value;
+		var lang = form.elements.lang.value;
 
 		var data = {
 			email: email,
 			name: name,
 			phone: phone,
 			title: title,
-			country: country
+			country: country,
+			lang: lang,
 		};
 
 		mixpanel.alias(email);
@@ -98,6 +100,7 @@ function eraseCookie(name) {
 			$email: email,
 			$phone: phone,
 			$title: title,
+			'Site Language': lang,
 			'Registered Country': country,
 		});
 
@@ -106,6 +109,7 @@ function eraseCookie(name) {
 			$email: email,
 			$phone: phone,
 			$title: title,
+			'Site Language': lang,
 			'Registered Country': country,
 		});
 
