@@ -202,25 +202,6 @@ p a:visited {
 	margin-bottom: 30px;
 }
 
-.who-you-are .sub-heading {
-	position: relative;
-	display: inline-block;
-	text-align: left;
-	left: 5%;
-}
-.who-you-are .sub-heading:before {
-	content: '15';
-	position: absolute;
-	display: inline-block;
-	text-align: left;
-	left: -40%;
-	top: -10px;
-	font-family: 'Source Sans Pro', sans-serif;
-	letter-spacing: 0.36px;
-	color: #FFAE53;
-	font-size: 2.7em;
-}
-
 /* Price Section */
 .main > section.price-section {
 	background-color: #FFAE53;
