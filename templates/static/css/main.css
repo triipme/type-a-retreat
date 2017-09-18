@@ -599,14 +599,6 @@ p a:visited {
 	text-align: left;
 }
 
-.jp .who-you-are .sub-heading {
-	left: 4%;
-}
-
-.jp .who-you-are .sub-heading:before {
-	left: -26%;
-}
-
 /* End Languages */
 
 @media screen and (min-width: 768px) {
