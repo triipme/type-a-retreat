@@ -731,3 +731,9 @@ p a:visited {
 		padding-right: 100px;
 	}
 }
+
+.and {
+	margin-bottom: 0;
+	font-size: 16px;
+	line-height: 2em;
+}
